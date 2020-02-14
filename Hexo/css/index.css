@@ -168,6 +168,9 @@ table td {
   border: 1px solid #d6d6d6;
   vertical-align: top;
 }
+table code{
+  word-break: break-all;
+}
 *::selection {
   background: #00c4b6;
   color: #f7f7f7;
@@ -1248,6 +1251,22 @@ blockquote {
   border-left: 0.2rem solid #49b1f5;
   background-color: #e9f5fe;
   color: #6a737d;
+  word-break: break-all;
+}
+blockquote :before {
+  background: #38a3fd;
+  border-radius: 50%;
+  color: #fff;
+  content: "!";
+  font-family: Dosis,"Source Sans Pro","Helvetica Neue",Arial,sans-serif;
+  font-size: 16px;
+  height: 21px;
+  line-height: 21px;
+  margin-left: -29px;
+  margin-top: -6px;
+  position: absolute;
+  text-align: center;
+  width: 21px;
 }
 blockquote a {
   word-break: break-all;
