@@ -1927,6 +1927,9 @@ blockquote footer cite:before {
 #vcomment .vimg {
   border: 0;
 }
+#vcomment img{
+  display:inline-block;
+}
 #vcomment .vimg:hover {
   -webkit-transform: rotate(540deg);
   -moz-transform: rotate(540deg);
