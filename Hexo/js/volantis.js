@@ -247,7 +247,7 @@
           , h = /^https?\:\/\//
           , v = {
             comment: "",
-            nick: "Anonymous",
+            nick: "匿名",
             mail: "",
             link: "",
             ua: navigator.userAgent,
@@ -258,7 +258,7 @@
                 head: {
                     nick: "昵称（必填）",
                     mail: "邮箱（必填）",
-                    link: "完整链接"
+                    link: "网址（http(s)://）"
                 },
                 tips: {
                     comments: "评论",
@@ -2318,16 +2318,16 @@
     }
     , function(e, t) {
         function aru(index){
-          return "<img  src='https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.6/Hexo/emotion/aru/" + index + ".png'>";
+          return "<img  src='https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.7/Hexo/emotion/aru/" + index + ".png'>";
         }
         function tieba(str){
-          return "<img  src='https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.6/Hexo/emotion/tieba/" + str + ".png'>";
+          return "<img  src='https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.7/Hexo/emotion/tieba/" + str + ".png'>";
         }
         function qq(str) {
-          return "<img  src='https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.6/Hexo/emotion/qq/" + str + ".gif'>";
+          return "<img  src='https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.7/Hexo/emotion/qq/" + str + ".gif'>";
         }
         function paopao(str) {
-            return "<img  src='https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.6/Hexo/emotion/paopao/" + str + ".gif'>";
+            return "<img  src='https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.7/Hexo/emotion/paopao/" + str + ".png'>";
           }
         e.exports = {
             aru5: aru(5),
@@ -2426,14 +2426,6 @@
             qq疑问: qq('疑问'),
             qq阴险: qq('阴险'),
             qq鼓掌: qq('鼓掌'),
-            qq托腮: qq('托腮'),
-            qq无奈: qq('无奈'),
-            qq开心: qq('开心'),
-            qq纠结: qq('纠结'),
-            qqdoge: qq('doge'),
-            qq吐血: qq('吐血'),
-            qq斜眼笑: qq('斜眼笑'),
-            qq笑哭: qq('笑哭'),
             pao1: paopao('tieba_emotion_13'),
             pao2: paopao('tieba_emotion_18'),
             pao3: paopao('tieba_emotion_24'),
