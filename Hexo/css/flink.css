@@ -26,5 +26,5 @@
   background: var(--primary-color, grey);
 }
 .flink .post-cards .md-links > .md-links-item {
-  border: 0px solid var(--primary-color, grey);
+  border: 1px solid var(--primary-color, grey);
 }
