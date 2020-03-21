@@ -12,6 +12,28 @@
       0 1px 0 var(--primary-color, grey);
   }
 }
+/* 边框彩色呼吸灯 */
+@keyframes link_custom1 {
+  0% {
+    box-shadow: 0 0 4px #ca00ff;
+  }
+
+  25% {
+    box-shadow: 0 0 16px #00b5e5;
+  }
+
+  50% {
+    box-shadow: 0 0 4px #00f;
+  }
+
+  75% {
+    box-shadow: 0 0 16px #b1da21;
+  }
+
+  100% {
+    box-shadow: 0 0 4px #f00;
+  }
+}
 /* 边框闪烁 */
 @keyframes flash {
   from {
