@@ -744,9 +744,9 @@ $(function () {
   var $hideInline = $('.hide-button')
   $hideInline.on('click', function (e) {
     e.preventDefault()
-    $(this).hide()
+//     $(this).hide();
     var $hideContent = $(this).next('.hide-content')
-    $hideContent.show()
+    $hideContent.toggle();
     $hideContent.find('.justified-gallery').justifiedGallery({
       rowHeight: 220,
       margins: 4
