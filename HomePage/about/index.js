@@ -1,6 +1,6 @@
 var windowWidth = $(window).width();
-if (location.href.indexOf(atob("YWJvdXQuYW50bW9lLmNvbQ==")) == -1) {
-  location.href = atob("aHR0cHMlM0EvL2Fib3V0LmFudG1vZS5jb20=");
+if(location.href.indexOf(atob("YWJvdXQuYW50bW9lLmNvbQ==")) == -1){
+  location.href = atob("aHR0cHM6Ly93d3cuYW50bW9lLmNvbQ==");
 }
 if (windowWidth < 767) {
   // do something
