@@ -1,14 +1,92 @@
 body {
-  cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur), default;
+  cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),
+    default;
 }
 a,
 img {
-  cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur), default;
+  cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur),
+    default;
 }
 #vcomment textarea {
   background: url("https://cdn.jsdelivr.net/gh/blogimg/HexoStaticFile1/imgbed/2020/02/13/20200213164243.png")
     100% 100% no-repeat;
 }
-#footer-wrap a:hover{
+#footer-wrap a:hover {
   color: #eee;
+}
+/* 颜色块 默认灰色*/
+span.inline-tag {
+  display: inline;
+  padding: 0.2em 0.6em 0.3em;
+  font-size: 90%;
+  font-weight: normal;
+  line-height: 1;
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.1rem;
+  border-radius: 6px;
+  background-color: var(--Color);
+}
+/* 预设颜色 */
+/* 启嘉红 */
+
+p.red,
+span.red {
+  --Color: rgb(233, 30, 100);
+}
+/* 启嘉绿 */
+p.green,
+span.green {
+  --Color: rgb(139, 195, 74);
+}
+/* 启嘉蓝 */
+p.blue,
+span.blue {
+  --Color: rgb(3, 169, 244);
+}
+/* 启嘉黄 */
+
+p.yellow,
+span.yellow {
+  --Color: rgb(255, 193, 7);
+}
+/* 启嘉灰 */
+p.grey,
+span.grey {
+  --Color: rgb(76, 76, 76);
+}
+
+/*  边框块级 */
+p.div-border {
+  display: block;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: transparent;
+}
+/*  左侧边框 */
+p.left {
+  border-left-width: 5px;
+  border-left-color: var(--Color);
+}
+
+/* 下侧边框 */
+p.bottom {
+  border-bottom-width: 5px;
+  border-bottom-color: var(--Color);
+}
+
+/* 右侧边框 */
+p.right {
+  border-right-width: 5px;
+  border-right-color: var(--Color);
+}
+
+/* 上侧边框 */
+p.top {
+  border-top-width: 5px;
+  border-top-color: var(--Color);
 }
