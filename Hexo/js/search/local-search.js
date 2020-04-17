@@ -45,7 +45,7 @@ $(function () {
   function search(path) {
     $.ajax({
       // url: GLOBAL_CONFIG.root + path,
-      url: GLOBAL_CONFIG.searchFile,
+      url: "https://cdn.jsdelivr.net/gh/sviptzk/sviptzk.github.io/search.xml",
       dataType: "xml",
       success: function (xmlResponse) {
         // get the contents from search data
