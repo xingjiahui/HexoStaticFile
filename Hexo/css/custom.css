@@ -7,6 +7,10 @@ img {
   cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur),
     default;
 }
+/* 头像悬停显示🎉 */
+.card-info-avatar:hover {
+  background: url("https://ae01.alicdn.com/kf/H3342af90d24b4d62b9bbfec9688ccc25M.gif");
+}
 /* 渐变色滚动动画 */
 @-webkit-keyframes Gradient {
   0% {
