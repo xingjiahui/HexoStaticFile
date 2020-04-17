@@ -2373,6 +2373,10 @@
                     '" class="vsys">' +
                     t.get("url") +
                     "</a>");
+              var master = t.get("mail") === "sviptzk@163.com";
+              var spanm = master
+                ? ` <span style="font-size:12px;display:inline-block;line-height:20px;background: #fd5d3c;border-radius:2px;color:#fff;padding:0 5px;position:inherit;margin-right:5px;cursor: pointer;">小康</span>`
+                : "";
               var l = t.get("link")
                   ? /^https?\:\/\//.test(t.get("link"))
                     ? t.get("link")
@@ -2383,7 +2387,8 @@
                     l +
                     '" target="_blank" >' +
                     t.get("nick") +
-                    "</a>"
+                    "</a>" +
+                    spanm
                   : '<span class="vnick">' + t.get("nick") + "</span>",
                 u = E.hide
                   ? ""
@@ -5574,6 +5579,22 @@ object-assign
     },
     function (e, t) {
       e.exports = {
+        皮鞭:
+          "https://tva1.sinaimg.cn/large/005B3XPgly1gbk1g3n5zqj302400zdfl.jpg",
+        互相伤害:
+          "https://tva1.sinaimg.cn/large/005B3XPgly1gbk1g3q8wjj301k012we9.jpg",
+        yes:
+          "https://tva1.sinaimg.cn/large/005B3XPgly1gbk1g428hcj302e014t8h.jpg",
+        深思:
+          "https://tva1.sinaimg.cn/large/005B3XPgly1gbk1g3737nj301f017dfl.jpg",
+        厉害:
+          "https://tva1.sinaimg.cn/large/005B3XPgly1gbk1g2rv16j301500s3y9.jpg",
+        捂脸:
+          "https://tva1.sinaimg.cn/large/005B3XPgly1gbk1g2ufk1j300v00z3y9.jpg",
+        吐血:
+          "https://tva1.sinaimg.cn/large/005B3XPgly1gbk1g2m3rpj301500s741.jpg",
+        纯洁的微笑:
+          "https://tva1.sinaimg.cn/large/005B3XPgly1gbk1g2bhdfj300v00s0pz.jpg",
         滑稽:
           "https://cdn.jsdelivr.net/gh/blogimg/picbed@master/2020/04/12/65590e49442ecf3e14a5d6cce1e0a3f5.png",
         汗:
