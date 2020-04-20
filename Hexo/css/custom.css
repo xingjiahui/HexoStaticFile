@@ -219,3 +219,7 @@ p.top {
 .hide-block > a.hide-button.open {
   display: inline-block;
 }
+/* 底部图片称为行内块级 */
+.layout_post img {
+  display: inline-block;
+}
