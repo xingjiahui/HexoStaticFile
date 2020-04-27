@@ -23,9 +23,11 @@ function switchComment() {
       });
 }
 var commentElement = document.getElementsByClassName("comment_headling")[0];
-commentElement.innerHTML +=
-  '<a id="switch-comment" href="javascript:void(0);" title="切换为Gitalk" target="_self"><i class="fa fas fa-toggle-off" aria-hidden="true"></i></a>';
-document.getElementById("gitalk-container").style.display = "none";
+if (commentElement != undefined) {
+  commentElement.innerHTML +=
+    '<a id="switch-comment" href="javascript:void(0);" title="切换为Gitalk" target="_self"><i class="fa fas fa-toggle-off" aria-hidden="true"></i></a>';
+  document.getElementById("gitalk-container").style.display = "none";
+}
 $("#switch-comment").click(function () {
   return switchComment(), !1;
 });
