@@ -223,3 +223,7 @@ p.top {
 .layout_post img {
   display: inline-block;
 }
+/* 轮播图小圆点 */
+.imgList li::before {
+  content: none !important;
+}
