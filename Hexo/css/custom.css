@@ -2,63 +2,22 @@ body {
   cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),
     default;
 }
+
 a,
 img {
   cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur),
     default;
 }
-/* 头像悬停显示🎉 */
+
 .card-info-avatar:hover {
-  background: url("https://ae01.alicdn.com/kf/H3342af90d24b4d62b9bbfec9688ccc25M.gif");
-}
-/* 渐变色滚动动画 */
-@-webkit-keyframes Gradient {
-  0% {
-    background-position: 0 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0 50%;
-  }
+  background: url(https://ae01.alicdn.com/kf/H3342af90d24b4d62b9bbfec9688ccc25M.gif);
 }
 
-@-moz-keyframes Gradient {
-  0% {
-    background-position: 0 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0 50%;
-  }
-}
-
-@keyframes Gradient {
-  0% {
-    background-position: 0 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0 50%;
-  }
-}
-/* 评论框图片 */
 #vcomment textarea {
-  background: url("https://cdn.jsdelivr.net/gh/blogimg/HexoStaticFile1/imgbed/2020/02/13/20200213164243.png")
+  background: url(https://cdn.jsdelivr.net/gh/blogimg/HexoStaticFile1/imgbed/2020/02/13/20200213164243.png)
     100% 100% no-repeat;
 }
-/* 网页背景颜色 */
+
 #web_bg {
   background: -webkit-linear-gradient(
     0deg,
@@ -116,36 +75,14 @@ img {
     rgba(109, 186, 130, 0.1) 100%
   );
 }
-/* 页脚footer */
-#footer {
-  background: linear-gradient(-45deg, #ee7752, #ce3e75, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  -webkit-animation: Gradient 10s ease infinite;
-  -moz-animation: Gradient 10s ease infinite;
-  animation: Gradient 10s ease infinite;
-  -o-user-select: none;
-  -ms-user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-#footer:before {
-  background-color: rgba(0, 0, 0, 0);
-}
 
-#footer-wrap a:hover {
-  color: #eee;
-}
-/* 颜色块 默认灰色*/
 span.inline-tag {
   display: inline;
   padding: 0.2em 0.6em 0.3em;
   font-size: 90%;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 1;
-  color: white;
+  color: #fff;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
@@ -153,36 +90,32 @@ span.inline-tag {
   border-radius: 6px;
   background-color: var(--Color);
 }
-/* 预设颜色 */
-/* 启嘉红 */
 
 p.red,
 span.red {
   --Color: rgb(233, 30, 100);
 }
-/* 启嘉绿 */
+
 p.green,
 span.green {
   --Color: rgb(139, 195, 74);
 }
-/* 启嘉蓝 */
+
 p.blue,
 span.blue {
   --Color: rgb(3, 169, 244);
 }
-/* 启嘉黄 */
 
 p.yellow,
 span.yellow {
   --Color: rgb(255, 193, 7);
 }
-/* 启嘉灰 */
+
 p.grey,
 span.grey {
   --Color: rgb(76, 76, 76);
 }
 
-/*  边框块级 */
 p.div-border {
   display: block;
   padding: 10px;
@@ -191,39 +124,70 @@ p.div-border {
   border-radius: 3px;
   background-color: transparent;
 }
-/*  左侧边框 */
+
 p.left {
   border-left-width: 5px;
   border-left-color: var(--Color);
 }
 
-/* 下侧边框 */
 p.bottom {
   border-bottom-width: 5px;
   border-bottom-color: var(--Color);
 }
 
-/* 右侧边框 */
 p.right {
   border-right-width: 5px;
   border-right-color: var(--Color);
 }
 
-/* 上侧边框 */
 p.top {
   border-top-width: 5px;
   border-top-color: var(--Color);
 }
-/* 隐藏按钮点击后不消失 */
-.hide-inline > a.hide-button.open,
-.hide-block > a.hide-button.open {
+
+.hide-block > a.hide-button.open,
+.hide-inline > a.hide-button.open {
   display: inline-block;
 }
-/* 底部图片称为行内块级 */
+
 .layout_post img {
   display: inline-block;
 }
-/* 轮播图小圆点 */
+
 .imgList li::before {
   content: none !important;
+}
+/* 滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(73, 177, 245, 0.2);
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #49b1f5;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.4) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0.4) 75%,
+    transparent 75%,
+    transparent
+  );
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+::-moz-selection {
+  color: #fff;
+  background-color: #49b1f5;
 }

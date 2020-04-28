@@ -54,7 +54,7 @@ function translatePage() {
     translateButtonObject.innerHTML = msgToTraditionalChinese;
     Cookies.set(targetEncodingCookie, targetEncoding, {
       expires: 7,
-      path: "/"
+      path: "/",
     });
     translateBody();
     if (isSnackbar) snackbarShow(Snackbar_tl.cht_to_chs);
@@ -64,7 +64,7 @@ function translatePage() {
     translateButtonObject.innerHTML = msgToSimplifiedChinese;
     Cookies.set(targetEncodingCookie, targetEncoding, {
       expires: 7,
-      path: "/"
+      path: "/",
     });
     translateBody();
     if (isSnackbar) snackbarShow(Snackbar_tl.chs_to_cht);
@@ -118,6 +118,6 @@ function translateInitilization() {
   }
 }
 
-(function() {
-  translateInitilization()
-})()
+(function () {
+  translateInitilization();
+})();
