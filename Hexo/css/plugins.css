@@ -54,7 +54,7 @@ div.tabs ul.nav-tabs {
   -ms-flex-pack: start;
   justify-content: flex-start;
   margin: 0 !important;
-  padding: 8px 8px 0 8px;
+  padding: 0 !important;
   background: #f6f6f6;
   border-radius: 4px 4px 0 0;
   line-height: 1.4em;
@@ -105,10 +105,12 @@ div.tabs .tab-content .tab-pane {
 
 div.tabs .tab-content .tab-pane:not(.active) {
   display: none;
+  opacity: 0;
 }
 
 div.tabs .tab-content .tab-pane.active {
   display: block;
+  opacity: 1;
 }
 
 div.tabs .tab-content .tab-pane > .fancybox:first-child,
