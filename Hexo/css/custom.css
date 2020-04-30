@@ -75,6 +75,12 @@ img {
     rgba(109, 186, 130, 0.1) 100%
   );
 }
+/* 文章卡片，文章列表卡片，右侧info卡片 */
+.layout_post > #post,
+#recent-posts > .recent-post-item,
+#aside_content .card-widget {
+  background: rgba(255, 255, 255, 0.3);
+}
 
 span.inline-tag {
   display: inline;
@@ -190,4 +196,17 @@ p.top {
 ::-moz-selection {
   color: #fff;
   background-color: #49b1f5;
+}
+/* 页脚 */
+#footer {
+  rgba(255, 255, 255, 0.15);
+  color: #000;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+#footer #footer-wrap {
+  color: #333;
+}
+#footer #footer-wrap a {
+  color: #333;
 }
