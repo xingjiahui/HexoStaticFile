@@ -536,6 +536,13 @@ $(function () {
   }
 
   /**
+   * lazyload
+   */
+  if (GLOBAL_CONFIG.islazyload) {
+    window.lozad("img").observe();
+  }
+
+  /**
    * 滾動處理
    */
   var initTop = 0;
@@ -633,11 +640,13 @@ $(function () {
       );
     };
 
-    // function updateAnchor (anchor) {
-    //   if (window.history.replaceState && anchor !== window.location.hash) {
-    //     window.history.replaceState(null, null, anchor)
-    //   }
-    // }
+    // anchor
+    var isanchor = GLOBAL_CONFIG.isanchor;
+    var updateAnchor = function (anchor) {
+      if (window.history.replaceState && anchor !== window.location.hash) {
+        window.history.replaceState(undefined, undefined, anchor);
+      }
+    };
 
     // find head position & add active class
     // DOM Hierarchy:
@@ -666,7 +675,7 @@ $(function () {
 
       var currentActive = $(".toc-link.active");
       if (currentId && currentActive.attr("href") !== currentId) {
-        // updateAnchor(currentId)
+        if (isanchor) updateAnchor(currentId);
 
         $(".toc-link").removeClass("active");
 
@@ -836,11 +845,7 @@ $(function () {
 
   $darkModeButtom.click(function () {
     switchReadMode();
-    try {
-      utterancesTheme();
-    } catch (e) {
-      return false;
-    }
+    if (typeof utterancesTheme === "function") utterancesTheme();
   });
 
   /**
