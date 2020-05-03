@@ -76,9 +76,10 @@ img {
   );
 }
 /* 文章卡片，文章列表卡片，右侧info卡片 */
-.layout_post > #post,
+#aside_content .card-widget,
 #recent-posts > .recent-post-item,
-#aside_content .card-widget {
+.layout_post > #post,
+#page {
   background: rgba(255, 255, 255, 0.3);
 }
 
