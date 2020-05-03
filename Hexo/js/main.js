@@ -603,8 +603,8 @@ $(function () {
       if (window.innerWidth <= 1024) {
         closeMobileSidebar("toc");
       } else {
-        e.preventDefault();
         scrollTo($(this).attr("href"));
+        // e.preventDefault();
       }
     });
 
