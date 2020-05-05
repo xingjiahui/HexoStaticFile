@@ -78,9 +78,16 @@ img {
 /* 文章卡片，文章列表卡片，右侧info卡片 */
 #aside_content .card-widget,
 #recent-posts > .recent-post-item,
+.layout_post > #page,
+.layout_page > div:first-child:not(.recent-posts),
 .layout_post > #post,
-#page {
-  background: rgba(255, 255, 255, 0.3);
+.read-mode .layout_post > #post {
+  background: var(--light_bg_color);
+}
+[data-theme="dark"] #nav,
+[data-theme="dark"] .layout_page > div:first-child:not(.recent-posts),
+[data-theme="dark"] .layout_post > #post {
+  background-color: var(--dark_bg_color);
 }
 
 span.inline-tag {
