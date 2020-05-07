@@ -835,6 +835,7 @@
 /* 适配主题样式 */
 .custom:not(.no-icon)::before {
   font-family: "iconfont";
+   color:var(--icon-color,#333);
 }
 .note.custom {
   background-color: #f7f7f7;
