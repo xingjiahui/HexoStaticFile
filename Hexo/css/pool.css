@@ -140,7 +140,7 @@ span.grey {
 
 p.div-border {
   padding: 10px;
-  border-color: var(--Color, #333);
+  border: 1px solid var(--Color, #333);
   border-radius: 0.4rem;
   background-color: var(--ColorA, transparent);
 }
