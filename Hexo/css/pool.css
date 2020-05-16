@@ -5,7 +5,13 @@ body {
   cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),
     default;
 }
-
+/* 阅读模式 */
+.read-mode {
+  font-size: 17px;
+}
+.read-mode #web_bg {
+  background: #fdf6e3;
+}
 a,
 img {
   cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur),
