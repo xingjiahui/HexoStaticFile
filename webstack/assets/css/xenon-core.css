@@ -8760,7 +8760,7 @@ label.radio-inline input[type="radio"] {
 
 nav.navbar {
   border: 0;
-  position: fixed;
+  /* position: fixed; */
   background: #fff;
   width: 100%;
   z-index: 999;
